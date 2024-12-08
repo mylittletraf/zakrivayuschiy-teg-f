@@ -13,4 +13,35 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
+  font-family: var(--main-font), sans-serif;
+}
+
+.header {
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  padding: clamp(7.5rem, 7.1479rem + 1.5023vw, 8rem) 0 clamp(7.5rem, 7.1479rem + 1.5023vw, 8rem);
+  background-color: var(--bg-color, white);
+  border: 2px solid currentColor;
+  max-inline-size: 700px;
+  margin-inline: auto;
+  margin-block-start: 100px;
+  margin-block-end: 100px;
+  gap:20px;
+}
+
+.header__title {
+  font-family: var(--accent-font), sans-serif;
+  font-size: 49px;
+  line-height: 49px;
+  text-transform: uppercase;
+  color: var(--header-title-color);
+}
+
+.header__subtitle {
+  font-family: var(--accent-font), sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: var(--header-subtitle-color);
 }
