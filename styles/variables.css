@@ -7,8 +7,18 @@
     --accent-font-weight: 700;
 
     --bg-color: #fff;
+    --border-color: #000;
     --header-title-color: #000;
     --header-subtitle-color: #000;
 
+    --card-title-font-weight: 700;
+    --card-description-text-color: #000;
+    --card-button-text-color: #fff;
+    --card-button-hover-color: #000;
+
+    --like-contour: #000;
+    --like-main-body: none;
+    --like-core: #aaa;
+    --like-sparks: red;
 
 }
