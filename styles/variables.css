@@ -5,6 +5,25 @@
     --main-font-weight: 400;
     --accent-font: "PressStart2P";
     --accent-font-weight: 700;
+    --bg-pattern:  repeating-linear-gradient(
+                            90deg,
+                            #d3d3d3 0,
+                            #d3d3d3 2px,
+                            transparent 2px,
+                            transparent 4px
+                    ),
+                    repeating-linear-gradient(
+                            0deg,
+                            #d3d3d3 0,
+                            #d3d3d3 2px,
+                            transparent 2px,
+                            transparent 4px
+                    ),
+                    linear-gradient(
+                            to bottom,
+                            #e7e7e7 0.01%,
+                            #1a1a1a 100%
+                    );
 
     --bg-color: #fff;
     --border-color: #000;
@@ -13,8 +32,11 @@
 
     --card-title-font-weight: 700;
     --card-description-text-color: #000;
-    --card-button-text-color: #fff;
-    --card-button-hover-color: #000;
+
+    --button-text-color: #fff;
+    --button-bg-color: #fff;
+    --button-hover-color: #000;
+
 
     --like-contour: #000;
     --like-main-body: none;
