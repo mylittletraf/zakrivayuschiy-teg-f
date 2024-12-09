@@ -77,6 +77,30 @@
   padding-block: 4px;
 }
 
+.card__image-block {
+  position: relative;
+}
+
+.card__label {
+  position: absolute;
+  font-family: var(--accent-font), sans-serif;
+  inset-block-start: clamp(23px, calc(23px + (25 - 23)*((100vw - 375px) /(1440 - 375))), 25px);
+  inset-inline-end: clamp(11px, calc(11px + (25 - 11)*((100vw - 375px) /(1440 - 375))), 25px);
+  text-transform: uppercase;
+  color: #000000;
+  mix-blend-mode: hard-light;
+  opacity: 0.5;
+  @supports (-webkit-text-stroke: 1px var(--bg-color, white)) or
+  (text-stroke: 1px var(--bg-color, white)) {
+
+    text-shadow: none;
+    -webkit-text-stroke: 1px var(--bg-color, white);
+    text-stroke: 1px var(--bg-color, white);
+  }
+}
+
+
+
 .card__image {
   object-fit: cover;
   object-position: center;
