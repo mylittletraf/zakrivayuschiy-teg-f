@@ -105,6 +105,7 @@
   mix-blend-mode: hard-light;
   opacity: 0.5;
   font-size: 14px;
+  z-index: 1;
   @supports (-webkit-text-stroke: 1px var(--bg-color, white)) or
   (text-stroke: 1px var(--bg-color, white)) {
 
@@ -180,7 +181,7 @@
 
 
 .filter-brightness {
-    filter: brightness(200%);
+    filter: brightness(50%);
 }
 
 .filter-contrast {
