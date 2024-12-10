@@ -17,33 +17,39 @@
   background-image: var(--bg-pattern);
   background-size: cover;
   background-attachment: fixed;
+  font-size: 18px;
 }
 
 .header {
   display: grid;
   justify-content: center;
   justify-items: center;
+  margin-block: 100px;
 
-  padding: clamp(7.5rem, 7.1479rem + 1.5023vw, 8rem) 0 clamp(7.5rem, 7.1479rem + 1.5023vw, 8rem);
+}
+
+.header__wrapper {
+  display: grid;
+  justify-content: center;
+  justify-items: center;
   background-color: var(--bg-color, white);
   border: 2px solid var(--border-color);
-  margin-block-start: 100px;
-  margin-block-end: 100px;
-  gap:20px;
+  padding-block: clamp(120px, 8.9vw, 128px);
+  inline-size: var(--header-width, min(100vw, 700px));
+  gap: 20px;
+
 }
 
 .header__title {
   font-family: var(--accent-font), sans-serif;
-  font-size: 49px;
-  line-height: 49px;
+  font-size: 65px;
   text-transform: uppercase;
   color: var(--header-title-color);
 }
 
 .header__subtitle {
   font-family: var(--accent-font), sans-serif;
-  font-size: 14px;
-  line-height: 14px;
+  font-size: 23px;
   text-transform: uppercase;
   color: var(--header-subtitle-color);
 }
@@ -117,6 +123,10 @@
   gap: 25px;
 }
 
+.card__text {
+  font-family: var(--main-font), sans-serif;
+}
+
 .card__buttons {
   display: flex;
   justify-content: flex-end;
@@ -175,17 +185,19 @@
 .save__button {
   display: flex;
   flex-direction: column;
-  border: 2px solid var(--border-color);
   align-items: center;
   padding-block: 15px;
   padding-inline: 20px;
   margin-block: 54px 102px;
   margin-inline: 34px;
   gap: 8px;
-  background-color: var(--button-bg-color);
-  mix-blend-mode: difference;
 
+  @media (width > 600px) {
+  flex-direction: row;
 }
+}
+
+
 
 .save__button-icon {
   width: 28px;
