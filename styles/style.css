@@ -196,6 +196,10 @@
   filter: brightness(50%);
 }
 
+.filter-brightness-blur {
+  filter: brightness(50%) blur(.2rem);
+}
+
 .filter-contrast {
   filter: contrast(20%);
 }
