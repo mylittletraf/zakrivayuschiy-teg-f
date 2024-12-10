@@ -1,48 +1,42 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 
 :root {
-    --main-font: "Inter-Variable";
-    --main-font-weight: 400;
-    --accent-font: "PressStart2P";
-    --accent-font-weight: 700;
-    --bg-pattern:  repeating-linear-gradient(
-                            90deg,
-                            #d3d3d3 0,
-                            #d3d3d3 2px,
-                            transparent 2px,
-                            transparent 4px
-                    ),
-                    repeating-linear-gradient(
-                            0deg,
-                            #d3d3d3 0,
-                            #d3d3d3 2px,
-                            transparent 2px,
-                            transparent 4px
-                    ),
-                    linear-gradient(
-                            to bottom,
-                            #e7e7e7 0.01%,
-                            #1a1a1a 100%
-                    );
+  --main-font: "Inter-Variable";
+  --main-font-weight: 400;
+  --accent-font: "PressStart2P";
+  --accent-font-weight: 700;
+  --bg-pattern: repeating-linear-gradient(
+      90deg,
+      #d3d3d3 0,
+      #d3d3d3 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    repeating-linear-gradient(
+      0deg,
+      #d3d3d3 0,
+      #d3d3d3 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a 100%);
 
-    --bg-color: #fff;
-    --border-color: #000;
-    --header-title-color: #000;
-    --header-title-font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
-    --header-subtitle-color: #000;
-    --header-width: min(100vw, 700px);
+  --bg-color: #fff;
+  --border-color: #000;
+  --header-title-color: #000;
+  --header-title-font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
+  --header-subtitle-color: #000;
+  --header-width: min(100vw, 700px);
 
-    --card-title-font-weight: 700;
-    --card-description-text-color: #000;
+  --card-title-font-weight: 700;
+  --card-description-text-color: #000;
 
-    --button-text-color: #fff;
-    --button-bg-color: #fff;
-    --button-hover-color: #000;
+  --button-text-color: #fff;
+  --button-bg-color: #fff;
+  --button-hover-color: #000;
 
-
-    --like-contour: #000;
-    --like-main-body: none;
-    --like-core: #aaa;
-    --like-sparks: red;
-
+  --like-contour: #000;
+  --like-main-body: none;
+  --like-core: #aaa;
+  --like-sparks: red;
 }
