@@ -140,14 +140,20 @@
 
 }
 
-.like-icon {
-  padding-inline: 3px;
-}
-
 .card__icon-button {
   background-color: transparent;
   border: none;
 }
+
+
+.card__icon-button:focus-visible {
+  border: 2px solid var(--border-color);
+}
+
+.card__icon-button:focus {
+  outline: none;
+}
+
 
 .card__like-button {
 
@@ -177,6 +183,14 @@
 
 .button:hover:after {
   transform: scaleX(1);
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button:focus-visible {
+  box-shadow: 2px 2px 0 var(--button-hover-color, black);
 }
 
 
