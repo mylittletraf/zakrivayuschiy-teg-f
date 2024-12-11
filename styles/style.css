@@ -64,15 +64,14 @@
 
 .card__item {
   display: flex;
-  border: 2px solid currentColor;
   flex-direction: column;
 }
 
 .cart__content {
   background-color: var(--bg-color, white);
   display: grid;
-
-  border-block-start: 2px solid var(--card-description-text-color, #000);
+  border: 2px solid currentColor;
+  border-block-end: 2px solid currentColor;
   font-size: 18px;
   line-height: 21px;
   gap: 46px;
@@ -83,7 +82,7 @@
 .card__title {
   font-variation-settings: "wght" var(--card-title-font-weight, 700);
   background-color: var(--bg-color, white);
-  border: 1px solid var(--border-color, black);
+  border: 2px solid currentColor;
   font-size: 18px;
   line-height: 22px;
   padding-inline: 10px;
@@ -92,6 +91,7 @@
 
 .card__image-block {
   position: relative;
+  border-inline: 2px solid currentColor;
   block-size: var(--card-image-block-size, clamp(375px, 100vw, 700px));
 }
 
@@ -150,10 +150,12 @@
 .card__icon-button {
   background-color: transparent;
   border: none;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
 }
 
 .card__icon-button:focus-visible {
-  border: 2px solid var(--border-color);
+  outline: 2px solid var(--border-color);
 }
 
 .card__icon-button:focus {
@@ -173,6 +175,7 @@
   border: 2px solid var(--border-color);
   font-family: var(--accent-font), sans-serif;
   color: var(--button-text-color);
+  transition: transform 0.5s ease-in-out;
 }
 
 .button:after {
@@ -195,6 +198,7 @@
 
 .button:focus-visible {
   box-shadow: 2px 2px 0 var(--button-hover-color, black);
+  transition: box-shadow 0.5s ease-in-out;
 }
 
 .filter-brightness {
@@ -248,6 +252,7 @@
   z-index: 10;
   text-align: center;
   mix-blend-mode: difference;
+  font-weight: 400;
 }
 
 .save__button {
@@ -257,7 +262,6 @@
   padding-block: 15px;
   padding-inline: 20px;
   margin-block: 54px 102px;
-  margin-inline: 34px;
   gap: 8px;
 
   @media (width > 600px) {
@@ -266,8 +270,7 @@
 }
 
 .save__button-icon {
-  width: 28px;
-  height: 28px;
+  block-size: calc(28px - (28 - 21) * ((100vw - 375px) / (1440 - 375)));
   color: var(--button-text-color);
   mix-blend-mode: difference;
   z-index: 10;
@@ -284,11 +287,11 @@
   flex-direction: column;
   max-width: clamp(341px, 100%, 357px);
   gap: 30px;
+  padding: clamp(29px, calc(19px + 10 * ((1440px - 100vw) / 1065)), 40px);
 }
 
 .save__modal[open] {
   display: flex;
-  padding: clamp(30px, calc(30px + 10 * ((1440px - 100vw) / 1065)), 40px);
 }
 
 .save__modal[open]::backdrop {
@@ -320,13 +323,14 @@
 
 .save__modal-close {
   border: 2px solid var(--border-color);
-  padding-block: 13px;
+  block-size: 2.375rem;
   inline-size: 100%;
 }
 
 .save__modal-close-text {
   font-family: var(--accent-font), sans-serif;
   font-size: 14px;
+  text-transform: uppercase;
 }
 
 .visually-hidden {
