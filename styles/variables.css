@@ -24,11 +24,12 @@
   --bg-color: #fff;
   --border-color: #000;
   --header-title-color: #000;
-  --header-title-font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
+  --header-title-font-size: clamp(375px, 100vw, 700px);
   --header-subtitle-color: #000;
   --header-width: min(100vw, 700px);
 
   --card-title-font-weight: 700;
+  --card-image-block-size: var(--header-width, clamp(375px, 100vw, 700px));
   --card-description-text-color: #000;
 
   --button-text-color: #fff;
