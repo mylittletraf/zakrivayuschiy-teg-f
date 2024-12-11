@@ -210,7 +210,7 @@
 }
 
 .filter-brightness-blur {
-  filter: brightness(50%) blur(.2rem);
+  filter: brightness(50%) blur(0.2rem);
 }
 
 .filter-contrast {
