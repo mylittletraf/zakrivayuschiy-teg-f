@@ -154,6 +154,10 @@
   transition: 0.3s ease-in-out;
 }
 
+.main-body {
+  fill: transparent;
+}
+
 .card__icon-button:focus-visible {
   outline: 2px solid var(--border-color);
 }

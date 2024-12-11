@@ -37,7 +37,7 @@
   --button-hover-color: #000;
 
   --like-contour: #000;
-  --like-main-body: none;
+  /*--like-main-body: none;*/
   --like-core: #aaa;
   --like-sparks: red;
 }
